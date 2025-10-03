@@ -281,7 +281,7 @@ function App() {
   {/* Scroll Indicator */}
   <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
     <div className="flex flex-col items-center">
-      <span className="text-blue-600 text-sm font-medium mb-2">Scroll Down</span>
+     
       <div className="w-6 h-10 border-2 border-blue-300 rounded-full flex justify-center">
         <div className="w-1 h-3 bg-blue-400 rounded-full mt-2"></div>
       </div>
