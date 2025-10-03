@@ -125,72 +125,71 @@ function App() {
       <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-50 via-white to-indigo-50 pt-20 pb-16 overflow-hidden">
   {/* Enhanced Background Elements */}
   <div className="absolute inset-0 overflow-hidden">
-    <div className="absolute top-0 left-0 w-96 h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
-    <div className="absolute bottom-0 right-0 w-96 h-96 bg-indigo-200/40 rounded-full blur-3xl animate-pulse delay-1000"></div>
-    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-1/2 h-1/2 bg-blue-100/20 rounded-full blur-3xl"></div>
-    <div className="absolute top-20 right-20 w-64 h-64 bg-blue-300/20 rounded-full blur-2xl"></div>
+    <div className="absolute top-0 left-0 w-72 h-72 md:w-96 md:h-96 bg-blue-200/30 rounded-full blur-3xl animate-pulse"></div>
+    <div className="absolute bottom-0 right-0 w-72 h-72 md:w-96 md:h-96 bg-indigo-200/40 rounded-full blur-3xl animate-pulse delay-1000"></div>
+    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 md:w-1/2 md:h-1/2 bg-blue-100/20 rounded-full blur-3xl"></div>
   </div>
 
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-    <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
       
       {/* Left Content - Text */}
-      <div className="space-y-8">
+      <div className="space-y-6 lg:space-y-8 order-2 lg:order-1 text-center lg:text-left">
         {/* Badge */}
-        <div className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-3 rounded-full text-sm font-semibold shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105">
+        <div className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
           <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
-          20+ Years of Clinical Excellence
+          20+ Years of Excellence
         </div>
 
         {/* Main Heading */}
-        <div className="space-y-6">
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight">
+        <div className="space-y-4 lg:space-y-6">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             Dr. M. Kashif{' '}
-            <span className="bg-gradient-to-r from-blue-800 to-indigo-700 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-blue-800 to-indigo-700 bg-clip-text text-transparent block lg:inline">
               Shazlee
             </span>
           </h1>
           
-          <p className="text-2xl md:text-3xl text-blue-800 font-semibold">
+          <p className="text-xl md:text-2xl text-blue-800 font-semibold">
             Associate Professor & Consultant Radiologist
           </p>
           
-          <div className="border-l-4 border-blue-600 pl-6 py-2 bg-white/50 backdrop-blur-sm rounded-r-2xl">
-            <p className="text-gray-800 text-lg font-medium">MBBS | MCPS | FCPS | FRCR (UK) | EDiR (Paris)</p>
+          <div className="border-l-0 lg:border-l-4 border-blue-600 pl-0 lg:pl-6 py-2 bg-white/50 backdrop-blur-sm rounded-2xl lg:rounded-r-2xl">
+            <p className="text-gray-800 text-base lg:text-lg font-medium">MBBS | MCPS | FCPS | FRCR (UK) | EDiR (Paris)</p>
           </div>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 gap-6 pt-4">
-          <div className="bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-6 flex flex-col items-center hover:shadow-2xl transition-all duration-500 border border-blue-100 hover:border-blue-300 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-              <BookOpen className="w-6 h-6 text-white" />
+        <div className="grid grid-cols-2 gap-4 lg:gap-6 pt-4">
+          <div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-xl lg:rounded-2xl p-4 lg:p-6 flex flex-col items-center border border-blue-100">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full flex items-center justify-center mb-3">
+              <BookOpen className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
             </div>
-            <span className="font-bold text-2xl text-gray-900 mb-1">20+</span>
-            <p className="text-gray-600 text-sm text-center font-medium">Research Publications</p>
+            <span className="font-bold text-xl lg:text-2xl text-gray-900">20+</span>
+            <p className="text-gray-600 text-xs lg:text-sm text-center font-medium">Research Publications</p>
           </div>
           
-          <div className="bg-white/80 backdrop-blur-sm shadow-xl rounded-2xl p-6 flex flex-col items-center hover:shadow-2xl transition-all duration-500 border border-blue-100 hover:border-blue-300 group">
-            <div className="w-12 h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-              <Users className="w-6 h-6 text-white" />
+          <div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-xl lg:rounded-2xl p-4 lg:p-6 flex flex-col items-center border border-blue-100">
+            <div className="w-10 h-10 lg:w-12 lg:h-12 bg-gradient-to-br from-indigo-500 to-indigo-600 rounded-full flex items-center justify-center mb-3">
+              <Users className="w-5 h-5 lg:w-6 lg:h-6 text-white" />
             </div>
-            <span className="font-bold text-2xl text-gray-900 mb-1">74</span>
-            <p className="text-gray-600 text-sm text-center font-medium">Scientific Presentations</p>
+            <span className="font-bold text-xl lg:text-2xl text-gray-900">74</span>
+            <p className="text-gray-600 text-xs lg:text-sm text-center font-medium">Scientific Presentations</p>
           </div>
         </div>
 
         {/* CTA Buttons */}
-        <div className="flex flex-col sm:flex-row gap-4 pt-8">
+        <div className="flex flex-col sm:flex-row gap-3 lg:gap-4 pt-6 lg:pt-8">
           <a
             href="#contact"
-            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-xl hover:shadow-2xl hover:scale-105 group"
+            className="inline-flex items-center justify-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 lg:px-8 py-3 lg:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
           >
             Schedule Consultation
-            <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
+            <ArrowRight className="ml-2 w-4 h-4 lg:w-5 lg:h-5" />
           </a>
           <a
             href="#procedures"
-            className="inline-flex items-center justify-center bg-white text-blue-700 border-2 border-blue-200 hover:border-blue-300 px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl"
+            className="inline-flex items-center justify-center bg-white text-blue-700 border-2 border-blue-200 px-6 lg:px-8 py-3 lg:py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg"
           >
             View Procedures
           </a>
@@ -198,18 +197,17 @@ function App() {
       </div>
 
       {/* Right Content - Images */}
-      <div className="relative">
-        <div className="grid grid-cols-2 gap-6 relative">
+      <div className="relative order-1 lg:order-2">
+        <div className="grid grid-cols-2 gap-4 lg:gap-6 relative max-w-md mx-auto lg:max-w-none">
           
           {/* Main Doctor Image */}
           <div className="relative group">
             <div className="relative w-full aspect-[3/4]">
               {/* Background Effects */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-3xl transform rotate-6 blur-xl opacity-20 group-hover:opacity-30 transition duration-700"></div>
-              <div className="absolute -inset-4 bg-gradient-to-br from-blue-500 to-blue-600 rounded-3xl transform -rotate-3 opacity-10 group-hover:opacity-20 transition duration-700 delay-100"></div>
+              <div className="absolute -inset-2 lg:-inset-4 bg-gradient-to-br from-blue-600 to-indigo-700 rounded-2xl lg:rounded-3xl transform rotate-3 lg:rotate-6 blur-lg lg:blur-xl opacity-20"></div>
               
               {/* Main Image Container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group-hover:scale-105 transition duration-700 border-4 border-white/80 backdrop-blur-sm h-full">
+              <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-xl lg:shadow-2xl border-2 lg:border-4 border-white/80 backdrop-blur-sm h-full">
                 <img
                   src="/images/dr1.jpg"
                   alt="Dr. M. Kashif Shazlee - Professional Portrait"
@@ -220,25 +218,22 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent"></div>
                 
                 {/* Experience Badge */}
-                <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white">
-                  <h3 className="text-lg font-bold text-gray-900">20+ Years</h3>
-                  <p className="text-blue-600 text-sm font-medium">Clinical Excellence</p>
+                <div className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 right-2 lg:right-4 bg-white/90 backdrop-blur-sm rounded-lg lg:rounded-xl p-2 lg:p-4 border border-white">
+                  <h3 className="text-sm lg:text-lg font-bold text-gray-900">20+ Years</h3>
+                  <p className="text-blue-600 text-xs lg:text-sm font-medium">Clinical Excellence</p>
                 </div>
               </div>
             </div>
-            
-            {/* Availability Indicator */}
-
           </div>
 
           {/* Second Doctor Image */}
-          <div className="relative group mt-12">
+          <div className="relative group mt-8 lg:mt-12">
             <div className="relative w-full aspect-[3/4]">
               {/* Background Effects */}
-              <div className="absolute -inset-4 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-3xl transform -rotate-6 blur-xl opacity-20 group-hover:opacity-30 transition duration-700"></div>
+              <div className="absolute -inset-2 lg:-inset-4 bg-gradient-to-br from-indigo-600 to-purple-700 rounded-2xl lg:rounded-3xl transform -rotate-3 lg:-rotate-6 blur-lg lg:blur-xl opacity-20"></div>
               
               {/* Second Image Container */}
-              <div className="relative rounded-2xl overflow-hidden shadow-2xl group-hover:scale-105 transition duration-700 border-4 border-white/80 backdrop-blur-sm h-full">
+              <div className="relative rounded-xl lg:rounded-2xl overflow-hidden shadow-xl lg:shadow-2xl border-2 lg:border-4 border-white/80 backdrop-blur-sm h-full">
                 <img
                   src="/images/dr3.jpg"
                   alt="Dr. M. Kashif Shazlee - Medical Practice"
@@ -249,29 +244,29 @@ function App() {
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/40 via-transparent to-transparent"></div>
                 
                 {/* Specialization Badge */}
-                <div className="absolute bottom-4 left-4 right-4 bg-white/90 backdrop-blur-sm rounded-xl p-4 border border-white">
-                  <h3 className="text-lg font-bold text-gray-900">Interventional</h3>
-                  <p className="text-indigo-600 text-sm font-medium">Radiology Expert</p>
+                <div className="absolute bottom-2 lg:bottom-4 left-2 lg:left-4 right-2 lg:right-4 bg-white/90 backdrop-blur-sm rounded-lg lg:rounded-xl p-2 lg:p-4 border border-white">
+                  <h3 className="text-sm lg:text-lg font-bold text-gray-900">Interventional</h3>
+                  <p className="text-indigo-600 text-xs lg:text-sm font-medium">Radiology Expert</p>
                 </div>
               </div>
             </div>
             
             {/* Success Rate Indicator */}
-            <div className="absolute -bottom-3 -left-3 bg-white rounded-2xl shadow-2xl p-3 border border-blue-100">
+            <div className="absolute -bottom-2 -left-2 lg:-bottom-3 lg:-left-3 bg-white rounded-lg lg:rounded-2xl shadow-lg lg:shadow-2xl p-2 lg:p-3 border border-blue-100">
               <div className="text-center">
-                <div className="text-sm font-bold text-blue-700">100%</div>
-                <div className="text-xs text-gray-600">Success Rate</div>
+                <div className="text-xs lg:text-sm font-bold text-blue-700">100%</div>
+                <div className="text-[10px] lg:text-xs text-gray-600">Success Rate</div>
               </div>
             </div>
           </div>
         </div>
 
         {/* Floating Certification Badge */}
-        <div className="absolute -bottom-6 -right-6 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-2xl shadow-2xl p-6 border border-white/20">
+        <div className="absolute -bottom-4 -right-4 lg:-bottom-6 lg:-right-6 bg-gradient-to-r from-blue-600 to-indigo-700 text-white rounded-lg lg:rounded-2xl shadow-lg lg:shadow-2xl p-3 lg:p-4 border border-white/20">
           <div className="text-center">
-            <Award className="w-8 h-8 mx-auto mb-2" />
-            <div className="text-sm font-semibold">Certified</div>
-            <div className="text-xs opacity-90">FRCR UK</div>
+            <Award className="w-5 h-5 lg:w-6 lg:h-6 mx-auto mb-1" />
+            <div className="text-xs lg:text-sm font-semibold">Certified</div>
+            <div className="text-[10px] lg:text-xs opacity-90">FRCR UK</div>
           </div>
         </div>
       </div>
@@ -279,14 +274,6 @@ function App() {
   </div>
 
   {/* Scroll Indicator */}
-  <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-    <div className="flex flex-col items-center">
-     
-      <div className="w-6 h-10 border-2 border-blue-300 rounded-full flex justify-center">
-        <div className="w-1 h-3 bg-blue-400 rounded-full mt-2"></div>
-      </div>
-    </div>
-  </div>
 </section>
       {/* Hero Section 3 - Leadership & Impact */}
       <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
