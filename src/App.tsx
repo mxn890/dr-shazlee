@@ -133,8 +133,8 @@ function App() {
   <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
     <div className="grid lg:grid-cols-2 gap-8 lg:gap-16 items-center">
       
-      {/* Left Content - Text */}
-      <div className="space-y-6 lg:space-y-8 order-2 lg:order-1 text-center lg:text-left">
+      {/* Left Content - Text - Now First on Mobile */}
+      <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
         {/* Badge */}
         <div className="inline-flex items-center bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-lg">
           <span className="w-2 h-2 bg-white rounded-full mr-2 animate-pulse"></span>
@@ -196,8 +196,8 @@ function App() {
         </div>
       </div>
 
-      {/* Right Content - Images */}
-      <div className="relative order-1 lg:order-2">
+      {/* Right Content - Images - Now Second on Mobile */}
+      <div className="relative">
         <div className="grid grid-cols-2 gap-4 lg:gap-6 relative max-w-md mx-auto lg:max-w-none">
           
           {/* Main Doctor Image */}
@@ -274,6 +274,7 @@ function App() {
   </div>
 
   {/* Scroll Indicator */}
+  
 </section>
       {/* Hero Section 3 - Leadership & Impact */}
       <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-purple-900 text-white relative overflow-hidden">
