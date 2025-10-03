@@ -852,7 +852,7 @@ function App() {
               <ul className="space-y-3">
                 <li className="flex items-center space-x-2 text-gray-400">
                   <Phone className="w-4 h-4 text-blue-400" />
-                  <span>0399-9999-999</span>
+                  <span>00314-1133-253</span>
                 </li>
                 <li className="flex items-center space-x-2 text-gray-400">
                   <Mail className="w-4 h-4 text-blue-400" />
