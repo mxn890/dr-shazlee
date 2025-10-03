@@ -75,64 +75,108 @@ function App() {
       </nav>
 
       {/* Hero Section 1 - Main Introduction */}
-      <section className="pt-32 pb-20 bg-gradient-to-br from-blue-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-6">
-              <div className="inline-block">
-                <span className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-semibold">
-                  20 Years of Excellence
-                </span>
-              </div>
-              <h1 className="text-5xl md:text-6xl font-bold text-gray-900 leading-tight">
-                Dr. M. Kashif Shazlee
-              </h1>
-              <p className="text-2xl text-blue-600 font-semibold">
-                Associate Professor & Consultant Radiologist
-              </p>
-              <p className="text-lg text-gray-600 leading-relaxed">
-                MBBS | MCPS | FCPS | FRCR (UK) | EDiR (Paris)
-              </p>
-              <div className="flex flex-wrap gap-4 pt-4">
-                <div className="flex items-center space-x-2 text-gray-700">
-                  <BookOpen className="w-5 h-5 text-blue-600" />
-                  <span>20 Research Articles</span>
-                </div>
-                <div className="flex items-center space-x-2 text-gray-700">
-                  <Users className="w-5 h-5 text-blue-600" />
-                  <span>74 Scientific Talks</span>
-                </div>
-              </div>
-              <div className="pt-6">
-                <a
-                  href="#contact"
-                  className="inline-flex items-center bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition shadow-lg hover:shadow-xl"
-                >
-                  Schedule Consultation
-                  <ChevronRight className="ml-2 w-5 h-5" />
-                </a>
-              </div>
+      <section className="relative bg-gradient-to-br from-blue-50 via-white to-blue-100 pt-28 pb-20 overflow-hidden">
+  <div className="absolute top-0 left-0 w-72 h-72 bg-blue-200/40 rounded-full blur-3xl -z-10"></div>
+  <div className="absolute bottom-0 right-0 w-96 h-96 bg-blue-300/30 rounded-full blur-3xl -z-10"></div>
+  <div className="absolute top-1/4 left-1/4 w-48 h-48 bg-blue-100/50 rounded-full blur-2xl -z-10"></div>
+
+  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="grid lg:grid-cols-2 gap-12 items-center">
+      
+    
+      <div className="space-y-8 order-2 lg:order-1">
+       
+        <div className="inline-flex items-center bg-gradient-to-r from-blue-500 to-blue-700 text-white px-5 py-2.5 rounded-full text-sm font-semibold shadow-md">
+          <span className="mr-2">🌟</span>
+          20 Years of Clinical Excellence
+        </div>
+
+       
+        <div className="space-y-4">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-blue-800 to-blue-600 bg-clip-text text-transparent leading-tight">
+            Dr. M. Kashif Shazlee
+          </h1>
+          
+          <p className="text-xl md:text-2xl text-blue-700 font-semibold">
+            Associate Professor & Consultant Radiologist
+          </p>
+          
+          <div className="border-l-4 border-blue-500 pl-4 py-1">
+            <p className="text-gray-700 text-lg">MBBS | MCPS | FCPS | FRCR (UK) | EDiR (Paris)</p>
+          </div>
+        </div>
+
+       
+        <div className="grid grid-cols-2 gap-5 pt-4">
+          <div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-xl p-5 flex flex-col items-center hover:shadow-xl transition-all duration-300 border border-blue-100">
+            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.746 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+              </svg>
             </div>
-            <div className="relative">
-              <div className="relative w-full aspect-square max-w-md mx-auto">
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl transform rotate-6"></div>
-                <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl transform -rotate-3"></div>
-                <div className="relative rounded-3xl overflow-hidden shadow-2xl">
-                  <img
-                    src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600"
-                    alt="Dr. M. Kashif Shazlee"
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/95 to-transparent p-6">
-                    <h3 className="text-2xl font-bold text-white mb-1">20+ Years</h3>
-                    <p className="text-blue-100">Clinical Excellence</p>
-                  </div>
-                </div>
-              </div>
+            <span className="font-bold text-xl text-gray-900">20+</span>
+            <p className="text-gray-600 text-sm text-center">Research Publications</p>
+          </div>
+          
+          <div className="bg-white/80 backdrop-blur-sm shadow-lg rounded-xl p-5 flex flex-col items-center hover:shadow-xl transition-all duration-300 border border-blue-100">
+            <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center mb-3">
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+              </svg>
+            </div>
+            <span className="font-bold text-xl text-gray-900">74</span>
+            <p className="text-gray-600 text-sm text-center">Scientific Presentations</p>
+          </div>
+        </div>
+
+      
+        <div className="pt-6">
+          <a
+            href="#contact"
+            className="inline-flex items-center bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-4 rounded-xl font-semibold transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+          >
+            Schedule Consultation
+            <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    
+      <div className="relative group order-1 lg:order-2">
+        <div className="relative w-full aspect-square max-w-md mx-auto">
+        
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-blue-800 rounded-3xl transform rotate-6 blur-md opacity-30 group-hover:opacity-40 transition duration-500"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500 to-blue-700 rounded-3xl transform -rotate-3 opacity-60"></div>
+          
+          
+          <div className="relative rounded-3xl overflow-hidden shadow-2xl group-hover:scale-105 transition duration-500 border-4 border-white">
+            <img
+              src="https://images.pexels.com/photos/5215024/pexels-photo-5215024.jpeg?auto=compress&cs=tinysrgb&w=600"
+              alt="Dr. M. Kashif Shazlee - Associate Professor & Consultant Radiologist"
+              className="w-full h-full object-cover"
+            />
+            
+    
+            <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-blue-900/90 to-transparent p-6">
+              <h3 className="text-2xl font-bold text-white mb-1">20+ Years</h3>
+              <p className="text-blue-100">Clinical Excellence</p>
             </div>
           </div>
         </div>
-      </section>
+        
+       
+        <div className="absolute -top-4 -right-4 bg-white rounded-xl shadow-lg p-4 border border-blue-100">
+          <div className="flex items-center">
+            <div className="w-3 h-3 bg-green-500 rounded-full mr-2"></div>
+            <span className="text-sm font-medium text-gray-700">Available</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
       {/* Hero Section 2 - Credentials */}
       <section className="py-20 bg-white">
